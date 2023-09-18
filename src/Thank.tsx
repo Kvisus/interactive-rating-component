@@ -6,7 +6,7 @@ function Thank({ buttonNumber }: Props) {
   return (
     <div className="main-flex">
       <img
-        src="../public/images/illustration-thank-you.svg"
+        src="./images/illustration-thank-you.svg"
         alt="check print"
       />
       <span>You selected {buttonNumber} out of 5</span>
