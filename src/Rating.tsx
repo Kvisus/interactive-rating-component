@@ -10,7 +10,7 @@ type Props = {
 function Rating({ handleClick, appState }: Props) {
   return (
     <>
-      <img className="star-icon" src="../public/images/icon-star.svg" />
+      <img className="star-icon" src="./images/icon-star.svg" />
       <h3>How did we do?</h3>
       <p>
         Please let us know how we did with your support request. All feedback is
