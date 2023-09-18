@@ -1,0 +1,118 @@
+* {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 20%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --button-size: 3rem;
+  --button-backgroud: hsl(214, 20%, 23%);
+}
+
+#root {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+}
+
+#bg-wrap {
+  background-color: var(--very-dark-blue);
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-frame {
+  background: linear-gradient(to bottom, var(--dark-blue), hsl(212, 19%, 15%));
+  color: var(--white);
+  border-radius: 1rem;
+  width: 350px;
+  height: 20rem;
+}
+.main-frame > * {
+  margin: 1rem;
+}
+.star-icon {
+  border-radius: 50%;
+  background: var(--button-backgroud);
+  padding: 0.8rem;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: x-large;
+  font-weight: bold;
+}
+p {
+  color: var(--light-grey);
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.num-button {
+  border-radius: 50%;
+  background-color: var(--button-backgroud);
+  width: var(--button-size);
+  height: var(--button-size);
+  border: none;
+  color: var(--medium-grey);
+  font-weight: 700;
+}
+
+.num-button:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.chosen-button {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+button.submit {
+  border-radius: 2rem;
+  width: 18rem;
+  position: relative;
+  left: calc(50% - 1rem);
+  transform: translate(-50%, 0);
+  background-color: var(--orange);
+  color: var(--white);
+  height: 3rem;
+  border: 1px solid black;
+  margin-top: -0.1rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+button.submit:hover {
+  color: var(--orange);
+  background-color: var(--white);
+}
+
+button {
+  cursor: pointer;
+}
+
+/* thank screen */
+.main-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 18rem;
+}
+
+.main-flex span{
+  border: 1px solid var(--button-backgroud);
+  border-radius: 2rem;
+  color: var(--orange);
+  background: var(--button-backgroud);
+  padding: 0.5rem;
+}
+
+.main-flex p{
+  line-height: 1.3rem;
+  text-align: center;
+}
